@@ -132,8 +132,6 @@ io.on('connection', (socket) => {
             socket.broadcast.to(room).emit('activity', name)
         }
     })
-
-    // On connection
 })
 
 function buildMsg(name, text) {
